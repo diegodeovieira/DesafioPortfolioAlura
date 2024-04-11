@@ -1,0 +1,217 @@
+@import url('https://fonts.googleapis.com/css2?family=Krona+One&family=Montserrat&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@600&display=swap');
+
+:root {
+    --cor-primaria: #000;
+    --cor-secundaria: #f6f6f6;
+    --cor-terciaria: #22d4fd;
+    --cor-hover: #272727;
+
+    --font-primaria: 'Krona One', sans-serif;
+    --font-secudaria: 'Montserrat', sans-serif;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+
+body{
+    box-sizing: border-box;
+    background-color: var(--cor-primaria);
+    color: var(--cor-secundaria);
+}
+
+.cabecalho{
+    padding: 2% 0% 0% 14%;
+}
+
+.cabecalho__menu{
+    display: flex;
+    gap: 80px;
+}
+
+.cabecalho__menu__link{
+    font-family: var(--font-secudaria);
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: var(--cor-terciaria);
+    text-decoration: none;
+}
+
+.apresentacao{
+    padding: 5% 16%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 82px;
+}
+
+.apresentacao__conteudo{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+.apresentacao__conteudo__titulo{
+    font-size: 2.25rem;
+    font-family: var(--font-primaria);
+}
+
+.titulo__destaque{
+    color: var(--cor-terciaria);
+}
+
+.apresentacao__conteudo__texto{
+    font-size: 1.5rem;
+    font-family: var(--font-secudaria);
+    margin: 40px 0;
+}
+
+.apresentacao__links{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    gap: 32px;
+}
+
+.apresentacao__links__subtitulos{
+    font-family: var(--font-primaria);
+    font-weight: 400;
+    font-size: 1.5rem;
+}
+
+.apresentacao__links__link{
+    border: 2px solid var(--cor-terciaria);
+    width: 378px;
+    text-align: center;
+    border-radius: 8px;
+    font-size: 1.5rem;
+    padding: 21.5px 0;
+    font-weight: 600;
+    text-decoration: none;
+    color: var(--cor-secundaria);
+    font-family: var(--font-secudaria);
+}
+
+.apresentacao__links__link:hover{
+    background-color: var(--cor-hover);
+}
+
+.apresentacao_imagem{
+    width: 50%;
+    border-radius: 20px;
+}
+
+.meus_projetos{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: space-around;
+    flex-grow: 1;
+    text-align: center;
+}
+
+.descricao{
+    font-family: var(--font-primaria);
+}
+
+
+.foto{
+    height: 383px;
+    width: 395px;
+    position: relative;
+    border-radius: 15px;
+    box-shadow: 1px 1px 4px black;
+    padding: 7px;
+}
+
+.rodape {
+    color: var(--cor-primaria);
+    background-color: var(--cor-terciaria);
+    padding: 24px;
+    text-align: center;
+    font-family: var(--font-secudaria);
+    font-size: 1.5rem;
+    font-weight: 400;
+}
+.pag2{
+    padding: 24px;  
+}
+#usuario{
+    display: flex;
+    border: none;
+    border-color:  var(--cor-terciaria);
+    height: 250px;
+    width: 100%;
+    justify-content: space-around;
+    align-items: center;
+
+}
+
+.ident{
+    font-family: var(--font-secudaria);
+	font-weight: normal;
+	font-size: 13pt;
+	background-color: var(--cor-terciaria);
+    border-radius: 15px;
+    padding: 10px 20px;
+    
+   
+}
+
+#cNome{
+    margin: 20px;
+    padding: 15px;
+    border-radius: 15px;
+    border-color: var(--cor-terciaria);
+    width: 250px;
+    font-size: 20px;
+} 
+
+#cEmail{
+    margin: 20px;
+    padding: 15px;
+    border-radius: 15px;
+    width: 250px;
+    border-color: var(--cor-terciaria);
+    font-size: 20px;
+} 
+
+#cMsg{
+    height: 170px;
+    width: 300px;
+    font-size: 20px;
+}
+
+input:hover, textarea:hover {
+	background-color: #dddddd;
+    border-radius: 15px;
+}
+
+legend{
+    font-family: var(--font-primaria);
+}
+
+@media(max-width: 1023px){
+    .cabecalho{
+        padding: 10%;
+    }
+    .cabecalho__menu{
+        justify-content: center;  
+    }
+    
+    .apresentacao{
+        flex-direction: column-reverse;
+        gap: 82px;
+        padding: 5%;
+    }
+
+    .apresentacao__conteudo{
+        width: auto;
+    }
+}
